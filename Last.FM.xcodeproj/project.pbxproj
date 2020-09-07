@@ -3,31 +3,109 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BA0C85AC2503A4C00053FF45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85AB2503A4C00053FF45 /* AppDelegate.swift */; };
 		BA0C85AE2503A4C00053FF45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85AD2503A4C00053FF45 /* SceneDelegate.swift */; };
-		BA0C85B02503A4C00053FF45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85AF2503A4C00053FF45 /* ViewController.swift */; };
 		BA0C85B32503A4C00053FF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0C85B12503A4C00053FF45 /* Main.storyboard */; };
 		BA0C85B52503A4C30053FF45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0C85B42503A4C30053FF45 /* Assets.xcassets */; };
 		BA0C85B82503A4C30053FF45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0C85B62503A4C30053FF45 /* LaunchScreen.storyboard */; };
+		BA0C85C42503A5660053FF45 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85C32503A5660053FF45 /* EndPoints.swift */; };
+		BA0C85C62503A8040053FF45 /* ResponseSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85C52503A8040053FF45 /* ResponseSearch.swift */; };
+		BA0C85C82503B1640053FF45 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85C72503B1640053FF45 /* SearchTableViewController.swift */; };
+		BA0C85CA2503B2450053FF45 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85C92503B2450053FF45 /* NetworkService.swift */; };
+		BA0C85CE2503B43D0053FF45 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85CD2503B43D0053FF45 /* Params.swift */; };
+		BA0C85D02503C2E30053FF45 /* LastFmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85CF2503C2E30053FF45 /* LastFmRequest.swift */; };
+		BA0C85D42503EDBB0053FF45 /* SearchOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85D32503EDBB0053FF45 /* SearchOperationQueue.swift */; };
+		BA0C85D6250406A90053FF45 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85D5250406A90053FF45 /* AppConstants.swift */; };
+		BA6926C825061FA800F6F78B /* ResponseArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926C725061FA800F6F78B /* ResponseArtistInfo.swift */; };
+		BA6926CA250620E600F6F78B /* LastfmRequestArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926C9250620E600F6F78B /* LastfmRequestArtistInfo.swift */; };
+		BA6926CD25063DB700F6F78B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926CC25063DB700F6F78B /* DetailsView.swift */; };
+		BA6926CF25063E0E00F6F78B /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926CE25063E0E00F6F78B /* DetailsViewModel.swift */; };
+		BA6926D1250641DA00F6F78B /* ResponseTrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926D0250641DA00F6F78B /* ResponseTrackInfo.swift */; };
+		BA6926D3250643AB00F6F78B /* LastFmRequestTrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926D2250643AB00F6F78B /* LastFmRequestTrackInfo.swift */; };
+		BA6926DB25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926DA25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift */; };
+		BAA1DCFA2504A46C0057EC43 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1DCF92504A46C0057EC43 /* SearchViewModel.swift */; };
+		BAA1DCFC2504A60E0057EC43 /* SearchTableDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1DCFB2504A60E0057EC43 /* SearchTableDelegator.swift */; };
+		BAA1DCFF2504CB870057EC43 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1DCFE2504CB870057EC43 /* SearchResultTableViewCell.swift */; };
+		BAA1DD01250505C70057EC43 /* ResponseAlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1DD00250505C70057EC43 /* ResponseAlbumInfo.swift */; };
+		BAA1DD03250520970057EC43 /* LastFmGetAlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1DD02250520970057EC43 /* LastFmGetAlbumInfo.swift */; };
+		BAA1DD05250533E10057EC43 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1DD04250533E10057EC43 /* DetailsViewController.swift */; };
+		BAEEBDC025067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDBF25067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift */; };
+		BAEEBDC2250687BF007FEA3F /* LastFM_SearchRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDC1250687BF007FEA3F /* LastFM_SearchRequestTest.swift */; };
+		BAEEBDC425068D10007FEA3F /* ValidateQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDC325068D10007FEA3F /* ValidateQueryParams.swift */; };
+		BAEEBDC625069028007FEA3F /* ValidateInfoMethodsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDC525069028007FEA3F /* ValidateInfoMethodsTest.swift */; };
+		BAEEBDC8250690F0007FEA3F /* ValidateSearchTypesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDC7250690F0007FEA3F /* ValidateSearchTypesTest.swift */; };
+		BAEEBDCA250691B1007FEA3F /* ValidateSearchMethodsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDC9250691B1007FEA3F /* ValidateSearchMethodsTest.swift */; };
+		BAEEBDCC25069409007FEA3F /* LastFmGetAlbumInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEEBDCB25069409007FEA3F /* LastFmGetAlbumInfoTest.swift */; };
+		EFDBEECD15A8E7AB8D98CCA9 /* Pods_Last_FM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4999E9F1137B69B15CC002 /* Pods_Last_FM.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA6926DD25064FC200F6F78B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0C85A02503A4C00053FF45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0C85A72503A4C00053FF45;
+			remoteInfo = Last.FM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		87A61C7B303C6F63B8CC5818 /* Pods-Last.FM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Last.FM.debug.xcconfig"; path = "Target Support Files/Pods-Last.FM/Pods-Last.FM.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0C85A82503A4C00053FF45 /* Last.FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Last.FM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0C85AB2503A4C00053FF45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA0C85AD2503A4C00053FF45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA0C85AF2503A4C00053FF45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA0C85B22503A4C00053FF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA0C85B42503A4C30053FF45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0C85B72503A4C30053FF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0C85B92503A4C30053FF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0C85C32503A5660053FF45 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		BA0C85C52503A8040053FF45 /* ResponseSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSearch.swift; sourceTree = "<group>"; };
+		BA0C85C72503B1640053FF45 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		BA0C85C92503B2450053FF45 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BA0C85CD2503B43D0053FF45 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		BA0C85CF2503C2E30053FF45 /* LastFmRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmRequest.swift; sourceTree = "<group>"; };
+		BA0C85D32503EDBB0053FF45 /* SearchOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOperationQueue.swift; sourceTree = "<group>"; };
+		BA0C85D5250406A90053FF45 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		BA6926C725061FA800F6F78B /* ResponseArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseArtistInfo.swift; sourceTree = "<group>"; };
+		BA6926C9250620E600F6F78B /* LastfmRequestArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmRequestArtistInfo.swift; sourceTree = "<group>"; };
+		BA6926CC25063DB700F6F78B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		BA6926CE25063E0E00F6F78B /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		BA6926D0250641DA00F6F78B /* ResponseTrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTrackInfo.swift; sourceTree = "<group>"; };
+		BA6926D2250643AB00F6F78B /* LastFmRequestTrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmRequestTrackInfo.swift; sourceTree = "<group>"; };
+		BA6926D825064FC200F6F78B /* Last.FMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Last.FMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6926DA25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFM_SearchTableDelegatorTests.swift; sourceTree = "<group>"; };
+		BA6926DC25064FC200F6F78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA1DCF92504A46C0057EC43 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		BAA1DCFB2504A60E0057EC43 /* SearchTableDelegator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableDelegator.swift; sourceTree = "<group>"; };
+		BAA1DCFE2504CB870057EC43 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		BAA1DD00250505C70057EC43 /* ResponseAlbumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAlbumInfo.swift; sourceTree = "<group>"; };
+		BAA1DD02250520970057EC43 /* LastFmGetAlbumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmGetAlbumInfo.swift; sourceTree = "<group>"; };
+		BAA1DD04250533E10057EC43 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		BAEEBDBF25067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lasf_FMValidateEndPointsTest.swift; sourceTree = "<group>"; };
+		BAEEBDC1250687BF007FEA3F /* LastFM_SearchRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFM_SearchRequestTest.swift; sourceTree = "<group>"; };
+		BAEEBDC325068D10007FEA3F /* ValidateQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateQueryParams.swift; sourceTree = "<group>"; };
+		BAEEBDC525069028007FEA3F /* ValidateInfoMethodsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateInfoMethodsTest.swift; sourceTree = "<group>"; };
+		BAEEBDC7250690F0007FEA3F /* ValidateSearchTypesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSearchTypesTest.swift; sourceTree = "<group>"; };
+		BAEEBDC9250691B1007FEA3F /* ValidateSearchMethodsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSearchMethodsTest.swift; sourceTree = "<group>"; };
+		BAEEBDCB25069409007FEA3F /* LastFmGetAlbumInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmGetAlbumInfoTest.swift; sourceTree = "<group>"; };
+		DA16F060830CAAAD38614EB9 /* Pods-Last.FM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Last.FM.release.xcconfig"; path = "Target Support Files/Pods-Last.FM/Pods-Last.FM.release.xcconfig"; sourceTree = "<group>"; };
+		DE4999E9F1137B69B15CC002 /* Pods_Last_FM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Last_FM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BA0C85A52503A4C00053FF45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDBEECD15A8E7AB8D98CCA9 /* Pods_Last_FM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6926D525064FC200F6F78B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,11 +115,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64048F6223F3B3FC8AF71E23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A61C7B303C6F63B8CC5818 /* Pods-Last.FM.debug.xcconfig */,
+				DA16F060830CAAAD38614EB9 /* Pods-Last.FM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA0C859F2503A4C00053FF45 = {
 			isa = PBXGroup;
 			children = (
 				BA0C85AA2503A4C00053FF45 /* Last.FM */,
+				BA6926D925064FC200F6F78B /* Last.FMTests */,
 				BA0C85A92503A4C00053FF45 /* Products */,
+				64048F6223F3B3FC8AF71E23 /* Pods */,
+				C30CF147214332AC0EC142B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BA0C85A82503A4C00053FF45 /* Last.FM.app */,
+				BA6926D825064FC200F6F78B /* Last.FMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +147,130 @@
 		BA0C85AA2503A4C00053FF45 /* Last.FM */ = {
 			isa = PBXGroup;
 			children = (
+				BA6926CB25063DA800F6F78B /* CustomView */,
+				BAA1DCFD2504CB760057EC43 /* CustomCells */,
+				BAA1DCF82504A45E0057EC43 /* ViewModel */,
+				BA0C85C22503A5520053FF45 /* Misc */,
+				BA0C85C12503A50E0053FF45 /* NetworkService */,
+				BA0C85C02503A5060053FF45 /* Models */,
+				BA0C85BF2503A4F60053FF45 /* Controller */,
 				BA0C85AB2503A4C00053FF45 /* AppDelegate.swift */,
 				BA0C85AD2503A4C00053FF45 /* SceneDelegate.swift */,
-				BA0C85AF2503A4C00053FF45 /* ViewController.swift */,
 				BA0C85B12503A4C00053FF45 /* Main.storyboard */,
 				BA0C85B42503A4C30053FF45 /* Assets.xcassets */,
 				BA0C85B62503A4C30053FF45 /* LaunchScreen.storyboard */,
 				BA0C85B92503A4C30053FF45 /* Info.plist */,
+				BA0C85D32503EDBB0053FF45 /* SearchOperationQueue.swift */,
 			);
 			path = Last.FM;
+			sourceTree = "<group>";
+		};
+		BA0C85BF2503A4F60053FF45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C85CB2503B3BD0053FF45 /* Delegate */,
+				BA0C85C72503B1640053FF45 /* SearchTableViewController.swift */,
+				BAA1DD04250533E10057EC43 /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA0C85C02503A5060053FF45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C85C52503A8040053FF45 /* ResponseSearch.swift */,
+				BAA1DD00250505C70057EC43 /* ResponseAlbumInfo.swift */,
+				BA6926C725061FA800F6F78B /* ResponseArtistInfo.swift */,
+				BA6926D0250641DA00F6F78B /* ResponseTrackInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA0C85C12503A50E0053FF45 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C85CC2503B42F0053FF45 /* LastFMRequest */,
+				BA0C85C92503B2450053FF45 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		BA0C85C22503A5520053FF45 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C85C32503A5660053FF45 /* EndPoints.swift */,
+				BA0C85D5250406A90053FF45 /* AppConstants.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		BA0C85CB2503B3BD0053FF45 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BAA1DCFB2504A60E0057EC43 /* SearchTableDelegator.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		BA0C85CC2503B42F0053FF45 /* LastFMRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C85CD2503B43D0053FF45 /* Params.swift */,
+				BA0C85CF2503C2E30053FF45 /* LastFmRequest.swift */,
+				BAA1DD02250520970057EC43 /* LastFmGetAlbumInfo.swift */,
+				BA6926C9250620E600F6F78B /* LastfmRequestArtistInfo.swift */,
+				BA6926D2250643AB00F6F78B /* LastFmRequestTrackInfo.swift */,
+			);
+			path = LastFMRequest;
+			sourceTree = "<group>";
+		};
+		BA6926CB25063DA800F6F78B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				BA6926CC25063DB700F6F78B /* DetailsView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		BA6926D925064FC200F6F78B /* Last.FMTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA6926DA25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift */,
+				BA6926DC25064FC200F6F78B /* Info.plist */,
+				BAEEBDBF25067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift */,
+				BAEEBDC1250687BF007FEA3F /* LastFM_SearchRequestTest.swift */,
+				BAEEBDC325068D10007FEA3F /* ValidateQueryParams.swift */,
+				BAEEBDC525069028007FEA3F /* ValidateInfoMethodsTest.swift */,
+				BAEEBDC7250690F0007FEA3F /* ValidateSearchTypesTest.swift */,
+				BAEEBDC9250691B1007FEA3F /* ValidateSearchMethodsTest.swift */,
+				BAEEBDCB25069409007FEA3F /* LastFmGetAlbumInfoTest.swift */,
+			);
+			path = Last.FMTests;
+			sourceTree = "<group>";
+		};
+		BAA1DCF82504A45E0057EC43 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAA1DCF92504A46C0057EC43 /* SearchViewModel.swift */,
+				BA6926CE25063E0E00F6F78B /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAA1DCFD2504CB760057EC43 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				BAA1DCFE2504CB870057EC43 /* SearchResultTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		C30CF147214332AC0EC142B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE4999E9F1137B69B15CC002 /* Pods_Last_FM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0C85BC2503A4C30053FF45 /* Build configuration list for PBXNativeTarget "Last.FM" */;
 			buildPhases = (
+				76FB4E535222BC2DB4BA50F9 /* [CP] Check Pods Manifest.lock */,
 				BA0C85A42503A4C00053FF45 /* Sources */,
 				BA0C85A52503A4C00053FF45 /* Frameworks */,
 				BA0C85A62503A4C00053FF45 /* Resources */,
+				057C4A7BCAB9B1AA388BFE8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +294,24 @@
 			productName = Last.FM;
 			productReference = BA0C85A82503A4C00053FF45 /* Last.FM.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BA6926D725064FC200F6F78B /* Last.FMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6926DF25064FC200F6F78B /* Build configuration list for PBXNativeTarget "Last.FMTests" */;
+			buildPhases = (
+				BA6926D425064FC200F6F78B /* Sources */,
+				BA6926D525064FC200F6F78B /* Frameworks */,
+				BA6926D625064FC200F6F78B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA6926DE25064FC200F6F78B /* PBXTargetDependency */,
+			);
+			name = Last.FMTests;
+			productName = Last.FMTests;
+			productReference = BA6926D825064FC200F6F78B /* Last.FMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +325,10 @@
 				TargetAttributes = {
 					BA0C85A72503A4C00053FF45 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					BA6926D725064FC200F6F78B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = BA0C85A72503A4C00053FF45;
 					};
 				};
 			};
@@ -116,6 +346,7 @@
 			projectRoot = "";
 			targets = (
 				BA0C85A72503A4C00053FF45 /* Last.FM */,
+				BA6926D725064FC200F6F78B /* Last.FMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,20 +362,111 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA6926D625064FC200F6F78B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		057C4A7BCAB9B1AA388BFE8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Last.FM/Pods-Last.FM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Last.FM/Pods-Last.FM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Last.FM/Pods-Last.FM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76FB4E535222BC2DB4BA50F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Last.FM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA0C85A42503A4C00053FF45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0C85B02503A4C00053FF45 /* ViewController.swift in Sources */,
+				BAA1DD03250520970057EC43 /* LastFmGetAlbumInfo.swift in Sources */,
+				BA6926CD25063DB700F6F78B /* DetailsView.swift in Sources */,
+				BAA1DD01250505C70057EC43 /* ResponseAlbumInfo.swift in Sources */,
+				BA6926CA250620E600F6F78B /* LastfmRequestArtistInfo.swift in Sources */,
+				BA6926D1250641DA00F6F78B /* ResponseTrackInfo.swift in Sources */,
+				BAA1DCFA2504A46C0057EC43 /* SearchViewModel.swift in Sources */,
 				BA0C85AC2503A4C00053FF45 /* AppDelegate.swift in Sources */,
+				BA0C85CE2503B43D0053FF45 /* Params.swift in Sources */,
+				BA0C85C42503A5660053FF45 /* EndPoints.swift in Sources */,
+				BA0C85D42503EDBB0053FF45 /* SearchOperationQueue.swift in Sources */,
+				BA6926C825061FA800F6F78B /* ResponseArtistInfo.swift in Sources */,
+				BA0C85C82503B1640053FF45 /* SearchTableViewController.swift in Sources */,
+				BA6926CF25063E0E00F6F78B /* DetailsViewModel.swift in Sources */,
+				BA6926D3250643AB00F6F78B /* LastFmRequestTrackInfo.swift in Sources */,
+				BA0C85C62503A8040053FF45 /* ResponseSearch.swift in Sources */,
+				BA0C85CA2503B2450053FF45 /* NetworkService.swift in Sources */,
+				BA0C85D02503C2E30053FF45 /* LastFmRequest.swift in Sources */,
+				BAA1DD05250533E10057EC43 /* DetailsViewController.swift in Sources */,
 				BA0C85AE2503A4C00053FF45 /* SceneDelegate.swift in Sources */,
+				BAA1DCFC2504A60E0057EC43 /* SearchTableDelegator.swift in Sources */,
+				BAA1DCFF2504CB870057EC43 /* SearchResultTableViewCell.swift in Sources */,
+				BA0C85D6250406A90053FF45 /* AppConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6926D425064FC200F6F78B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEEBDC425068D10007FEA3F /* ValidateQueryParams.swift in Sources */,
+				BA6926DB25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift in Sources */,
+				BAEEBDC025067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift in Sources */,
+				BAEEBDCC25069409007FEA3F /* LastFmGetAlbumInfoTest.swift in Sources */,
+				BAEEBDC8250690F0007FEA3F /* ValidateSearchTypesTest.swift in Sources */,
+				BAEEBDC2250687BF007FEA3F /* LastFM_SearchRequestTest.swift in Sources */,
+				BAEEBDC625069028007FEA3F /* ValidateInfoMethodsTest.swift in Sources */,
+				BAEEBDCA250691B1007FEA3F /* ValidateSearchMethodsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA6926DE25064FC200F6F78B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0C85A72503A4C00053FF45 /* Last.FM */;
+			targetProxy = BA6926DD25064FC200F6F78B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BA0C85B12503A4C00053FF45 /* Main.storyboard */ = {
@@ -282,11 +604,13 @@
 		};
 		BA0C85BD2503A4C30053FF45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A61C7B303C6F63B8CC5818 /* Pods-Last.FM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49N3E55H55;
 				INFOPLIST_FILE = Last.FM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +624,13 @@
 		};
 		BA0C85BE2503A4C30053FF45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA16F060830CAAAD38614EB9 /* Pods-Last.FM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49N3E55H55;
 				INFOPLIST_FILE = Last.FM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +639,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA6926E025064FC200F6F78B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49N3E55H55;
+				INFOPLIST_FILE = Last.FMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fm.last.app.Last-FMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Last.FM.app/Last.FM";
+			};
+			name = Debug;
+		};
+		BA6926E125064FC200F6F78B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49N3E55H55;
+				INFOPLIST_FILE = Last.FMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fm.last.app.Last-FMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Last.FM.app/Last.FM";
 			};
 			name = Release;
 		};
@@ -333,6 +699,15 @@
 			buildConfigurations = (
 				BA0C85BD2503A4C30053FF45 /* Debug */,
 				BA0C85BE2503A4C30053FF45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6926DF25064FC200F6F78B /* Build configuration list for PBXNativeTarget "Last.FMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6926E025064FC200F6F78B /* Debug */,
+				BA6926E125064FC200F6F78B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
