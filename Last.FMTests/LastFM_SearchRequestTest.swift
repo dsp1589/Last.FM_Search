@@ -30,7 +30,7 @@ class LastFM_SearchRequestTest: XCTestCase {
         
         XCTAssert(qItems?.queryItems?.first(where: { (item) in
             return item.name == QParams.apiKey.rawValue
-        })?.value == "c0e345bacd64670563a7edefd0675f18", "API key not set ")
+        })?.value == Testconstants.apiKeyTest, "API key not set ")
         
         XCTAssert(qItems?.queryItems?.first(where: { (item) in
             return item.name == SearchType.albumSearch.rawValue

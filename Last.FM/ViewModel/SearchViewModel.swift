@@ -24,13 +24,15 @@ class SearchResultsTableViewModel {
     weak var controller: SearchTableViewController?
     var scopeIndex: Int = 0
     private var searchResult: ResponseSearch?
-    private var searchState: SearchState = .idle {
+    var searchState: SearchState = .idle {
         didSet{
             DispatchQueue.main.async {
                 self.controller?.tableView.reloadData()
             }
         }
     }
+    var urlSession: URLSession = LastFMURLSession.shared
+
     
     init() {
         delegator.model = self
@@ -44,7 +46,7 @@ class SearchResultsTableViewModel {
             self?.searchResult = response
             self?.delegator.currentState = .completed
             self?.searchState = .completed
-        })
+            }, session: self.urlSession)
         searchOperationQueue.addOperation(currentSearchOperation!)
         searchResult = nil
         searchState = .searching

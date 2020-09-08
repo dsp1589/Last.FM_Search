@@ -22,7 +22,7 @@ class LastFmGetAlbumInfoTest: XCTestCase {
         let format = "format"
         let json = "json"
         let apiKey = "api_key"
-        let key = "c0e345bacd64670563a7edefd0675f18"
+        let key = Testconstants.apiKeyTest
         
         let request = LastFmGetAlbumInfo<AlbumInfoWrapper>(params: [method: albumInfo, alb:albName, artist:artName], success: { (albumInfo) in
             
@@ -34,7 +34,7 @@ class LastFmGetAlbumInfoTest: XCTestCase {
         XCTAssert(urlRequest != nil , "Request not built")
         let url = urlRequest?.url
         let qItems = URLComponents(url: url!, resolvingAgainstBaseURL: false)
-        
+        XCTAssert(qItems?.queryItems?.count == 5, "extra params sent in request / required params not sent in request")
         XCTAssert(qItems?.queryItems?.contains(where: { (ele) in
             return ele.name == method && ele.value == albumInfo
         }) == true, "Method not sent in request")

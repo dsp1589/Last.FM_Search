@@ -24,6 +24,7 @@ class DetailsViewModel {
     var status: DetailsViewState = .loading
     
     weak var view: DetailsView?
+    var urlSession: URLSession = LastFMURLSession.shared
     
     init(searchPaarams: [String: String], searchType: SearchType) {
         self.searchType = searchType
@@ -31,10 +32,10 @@ class DetailsViewModel {
     }
     
     func refreshData() {
-        fetchContenst()
+        fetchContents()
     }
     
-    private func fetchContenst(){
+    private func fetchContents(){
         switch searchType {
         case .albumSearch:
             fetchAlbumDetails()
@@ -129,7 +130,8 @@ class DetailsViewModel {
     }
     
     private func fetchAlbumDetails(){
-        let request = LastFmGetAlbumInfo<AlbumInfoWrapper>(params: searchPaarams, success: { [weak self] albumInfo in
+        let request = LastFmGetAlbumInfo<AlbumInfoWrapper>(params: searchPaarams, success: { [weak self] albumInfo
+            in
             
             guard let strongSelf = self else { return }
             guard let albumInfo = albumInfo else { return }
@@ -140,9 +142,10 @@ class DetailsViewModel {
              
             }, failure: { [weak self]
                 message in
-                self?.view?.failureUpdate()
+                self?.status = .done
+                self?.view?.failedToFetchata()
         })
-        NetworkService.shared.get(request: request)
+        NetworkService.init(s: urlSession).get(request: request)
     }
     
     private func fetchArtistDetails() {
@@ -158,11 +161,11 @@ class DetailsViewModel {
 
             }, failure: { [weak self]
                 message in
-                
-                self?.view?.failureUpdate()
+                self?.status = .done
+                self?.view?.failedToFetchata()
                 
         })
-        NetworkService.shared.get(request: request)
+        NetworkService.init(s: urlSession).get(request: request)
     }
     
     private func fetchTrackDetails() {
@@ -177,9 +180,9 @@ class DetailsViewModel {
             
             }, failure: { [weak self]
                 message in
-                
-                self?.view?.failureUpdate()
+                self?.status = .done
+                self?.view?.failedToFetchata()
         })
-        NetworkService.shared.get(request: request)
+        NetworkService.init(s: urlSession).get(request: request)
     }
 }

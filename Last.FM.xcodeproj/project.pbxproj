@@ -20,6 +20,20 @@
 		BA0C85D02503C2E30053FF45 /* LastFmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85CF2503C2E30053FF45 /* LastFmRequest.swift */; };
 		BA0C85D42503EDBB0053FF45 /* SearchOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85D32503EDBB0053FF45 /* SearchOperationQueue.swift */; };
 		BA0C85D6250406A90053FF45 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C85D5250406A90053FF45 /* AppConstants.swift */; };
+		BA5A960B25074D08003C7653 /* LastFMURLMockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A960A25074D08003C7653 /* LastFMURLMockSession.swift */; };
+		BA5A960D25075060003C7653 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A960C25075060003C7653 /* TestConstants.swift */; };
+		BA5A960F250754FB003C7653 /* SearchModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A960E250754FB003C7653 /* SearchModelTest.swift */; };
+		BA5A961225075550003C7653 /* artist_search_result.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5A961125075550003C7653 /* artist_search_result.json */; };
+		BA5A961425076559003C7653 /* SearchModel_AlbumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A961325076559003C7653 /* SearchModel_AlbumTest.swift */; };
+		BA5A961625076798003C7653 /* album_search_result.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5A961525076798003C7653 /* album_search_result.json */; };
+		BA5A961825076BB2003C7653 /* SearchAlbum_TrackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A961725076BB2003C7653 /* SearchAlbum_TrackTest.swift */; };
+		BA5A961C25076CC8003C7653 /* track_search_result.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5A961B25076CC8003C7653 /* track_search_result.json */; };
+		BA5A962025077EEE003C7653 /* artist_info.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5A961F25077EEE003C7653 /* artist_info.json */; };
+		BA5A962225077F53003C7653 /* album_info.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5A962125077F53003C7653 /* album_info.json */; };
+		BA5A962425077FB4003C7653 /* track_info.json in Resources */ = {isa = PBXBuildFile; fileRef = BA5A962325077FB4003C7653 /* track_info.json */; };
+		BA5A962625078026003C7653 /* ArtistInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A962525078026003C7653 /* ArtistInfoTest.swift */; };
+		BA5A962825078766003C7653 /* AlbumInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A962725078766003C7653 /* AlbumInfoTest.swift */; };
+		BA5A962A25078DC3003C7653 /* TrackInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A962925078DC3003C7653 /* TrackInfoTest.swift */; };
 		BA6926C825061FA800F6F78B /* ResponseArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926C725061FA800F6F78B /* ResponseArtistInfo.swift */; };
 		BA6926CA250620E600F6F78B /* LastfmRequestArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926C9250620E600F6F78B /* LastfmRequestArtistInfo.swift */; };
 		BA6926CD25063DB700F6F78B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6926CC25063DB700F6F78B /* DetailsView.swift */; };
@@ -70,6 +84,20 @@
 		BA0C85CF2503C2E30053FF45 /* LastFmRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFmRequest.swift; sourceTree = "<group>"; };
 		BA0C85D32503EDBB0053FF45 /* SearchOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOperationQueue.swift; sourceTree = "<group>"; };
 		BA0C85D5250406A90053FF45 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		BA5A960A25074D08003C7653 /* LastFMURLMockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFMURLMockSession.swift; sourceTree = "<group>"; };
+		BA5A960C25075060003C7653 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		BA5A960E250754FB003C7653 /* SearchModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelTest.swift; sourceTree = "<group>"; };
+		BA5A961125075550003C7653 /* artist_search_result.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = artist_search_result.json; sourceTree = "<group>"; };
+		BA5A961325076559003C7653 /* SearchModel_AlbumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel_AlbumTest.swift; sourceTree = "<group>"; };
+		BA5A961525076798003C7653 /* album_search_result.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = album_search_result.json; sourceTree = "<group>"; };
+		BA5A961725076BB2003C7653 /* SearchAlbum_TrackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbum_TrackTest.swift; sourceTree = "<group>"; };
+		BA5A961B25076CC8003C7653 /* track_search_result.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = track_search_result.json; sourceTree = "<group>"; };
+		BA5A961F25077EEE003C7653 /* artist_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = artist_info.json; sourceTree = "<group>"; };
+		BA5A962125077F53003C7653 /* album_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = album_info.json; sourceTree = "<group>"; };
+		BA5A962325077FB4003C7653 /* track_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = track_info.json; sourceTree = "<group>"; };
+		BA5A962525078026003C7653 /* ArtistInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoTest.swift; sourceTree = "<group>"; };
+		BA5A962725078766003C7653 /* AlbumInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfoTest.swift; sourceTree = "<group>"; };
+		BA5A962925078DC3003C7653 /* TrackInfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoTest.swift; sourceTree = "<group>"; };
 		BA6926C725061FA800F6F78B /* ResponseArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseArtistInfo.swift; sourceTree = "<group>"; };
 		BA6926C9250620E600F6F78B /* LastfmRequestArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastfmRequestArtistInfo.swift; sourceTree = "<group>"; };
 		BA6926CC25063DB700F6F78B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
@@ -224,6 +252,19 @@
 			path = LastFMRequest;
 			sourceTree = "<group>";
 		};
+		BA5A961025075533003C7653 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA5A961125075550003C7653 /* artist_search_result.json */,
+				BA5A961525076798003C7653 /* album_search_result.json */,
+				BA5A961B25076CC8003C7653 /* track_search_result.json */,
+				BA5A961F25077EEE003C7653 /* artist_info.json */,
+				BA5A962125077F53003C7653 /* album_info.json */,
+				BA5A962325077FB4003C7653 /* track_info.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BA6926CB25063DA800F6F78B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +276,7 @@
 		BA6926D925064FC200F6F78B /* Last.FMTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA5A961025075533003C7653 /* Resources */,
 				BA6926DA25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift */,
 				BA6926DC25064FC200F6F78B /* Info.plist */,
 				BAEEBDBF25067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift */,
@@ -244,6 +286,14 @@
 				BAEEBDC7250690F0007FEA3F /* ValidateSearchTypesTest.swift */,
 				BAEEBDC9250691B1007FEA3F /* ValidateSearchMethodsTest.swift */,
 				BAEEBDCB25069409007FEA3F /* LastFmGetAlbumInfoTest.swift */,
+				BA5A960A25074D08003C7653 /* LastFMURLMockSession.swift */,
+				BA5A960C25075060003C7653 /* TestConstants.swift */,
+				BA5A960E250754FB003C7653 /* SearchModelTest.swift */,
+				BA5A961325076559003C7653 /* SearchModel_AlbumTest.swift */,
+				BA5A961725076BB2003C7653 /* SearchAlbum_TrackTest.swift */,
+				BA5A962525078026003C7653 /* ArtistInfoTest.swift */,
+				BA5A962725078766003C7653 /* AlbumInfoTest.swift */,
+				BA5A962925078DC3003C7653 /* TrackInfoTest.swift */,
 			);
 			path = Last.FMTests;
 			sourceTree = "<group>";
@@ -366,6 +416,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5A961625076798003C7653 /* album_search_result.json in Resources */,
+				BA5A962425077FB4003C7653 /* track_info.json in Resources */,
+				BA5A961C25076CC8003C7653 /* track_search_result.json in Resources */,
+				BA5A962025077EEE003C7653 /* artist_info.json in Resources */,
+				BA5A961225075550003C7653 /* artist_search_result.json in Resources */,
+				BA5A962225077F53003C7653 /* album_info.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,14 +503,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5A962625078026003C7653 /* ArtistInfoTest.swift in Sources */,
 				BAEEBDC425068D10007FEA3F /* ValidateQueryParams.swift in Sources */,
 				BA6926DB25064FC200F6F78B /* LastFM_SearchTableDelegatorTests.swift in Sources */,
+				BA5A960B25074D08003C7653 /* LastFMURLMockSession.swift in Sources */,
 				BAEEBDC025067C27007FEA3F /* Lasf_FMValidateEndPointsTest.swift in Sources */,
+				BA5A962825078766003C7653 /* AlbumInfoTest.swift in Sources */,
 				BAEEBDCC25069409007FEA3F /* LastFmGetAlbumInfoTest.swift in Sources */,
+				BA5A961425076559003C7653 /* SearchModel_AlbumTest.swift in Sources */,
+				BA5A961825076BB2003C7653 /* SearchAlbum_TrackTest.swift in Sources */,
 				BAEEBDC8250690F0007FEA3F /* ValidateSearchTypesTest.swift in Sources */,
 				BAEEBDC2250687BF007FEA3F /* LastFM_SearchRequestTest.swift in Sources */,
+				BA5A960D25075060003C7653 /* TestConstants.swift in Sources */,
 				BAEEBDC625069028007FEA3F /* ValidateInfoMethodsTest.swift in Sources */,
 				BAEEBDCA250691B1007FEA3F /* ValidateSearchMethodsTest.swift in Sources */,
+				BA5A960F250754FB003C7653 /* SearchModelTest.swift in Sources */,
+				BA5A962A25078DC3003C7653 /* TrackInfoTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

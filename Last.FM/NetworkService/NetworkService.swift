@@ -10,8 +10,11 @@ import Foundation
 
 final class NetworkService {
     
-    static let shared = NetworkService()
-    let session = URLSession.shared
+    let session: URLSession
+    
+    init(s: URLSession) {
+        self.session = s
+    }
     
     func get(request: Request) {
         guard let urlRequest = request.buildRequest() else {
@@ -21,4 +24,9 @@ final class NetworkService {
             request.requestCompleted(data: data, response: response, error: error)
         }.resume()
     }
+}
+
+
+class LastFMURLSession : URLSession {
+    //Extra URL config can be added here
 }

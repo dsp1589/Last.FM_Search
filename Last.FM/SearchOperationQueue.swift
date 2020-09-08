@@ -23,10 +23,13 @@ class SearchOperation: Operation {
     var searchRequest: LastFmSearchRequest<ResponseSearch>?
     var operationCompleted: ((ResponseSearch?) -> Void)?
     
-    convenience init(text: String,searchM: SearchMethod, searchType: SearchType,completionBlock: @escaping ((ResponseSearch?) -> Void)) {
+    var urlSession: URLSession = LastFMURLSession.shared
+    
+    convenience init(text: String,searchM: SearchMethod, searchType: SearchType,completionBlock: @escaping ((ResponseSearch?) -> Void), session: URLSession) {
         self.init()
         searchText = text
         operationCompleted = completionBlock
+        self.urlSession = session
         searchRequest = LastFmSearchRequest<ResponseSearch>(searchMethod: searchM, searchTerm: searchText, searchType: searchType, success: { [weak self] (response) in
             guard let weakSelf = self else {
                 return
@@ -47,7 +50,7 @@ class SearchOperation: Operation {
     }
     
     override func main() {
-        NetworkService.shared.get(request: searchRequest!)
+        NetworkService.init(s: urlSession).get(request: searchRequest!)
     }
     
 }

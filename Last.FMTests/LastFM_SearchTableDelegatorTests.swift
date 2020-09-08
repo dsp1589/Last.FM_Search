@@ -12,15 +12,7 @@ import XCTest
 class Last_SearchTableDelegatorTests: XCTestCase {
     
     let searchTableDelegator = SearchTableDelegator()
-
-    override func setUpWithError() throws {
-        print("Set up")
-    }
-
-    override func tearDownWithError() throws {
-        print("tear down")
-    }
-
+    
     func testSearchTableDelegatorState_numberOfRowsIdle() throws {
         searchTableDelegator.currentState = .idle
         XCTAssert(searchTableDelegator.tableView(UITableView(), numberOfRowsInSection: 0) == 0, "SearchTableDelegator no of rows condition failed for \(SearchState.idle)")

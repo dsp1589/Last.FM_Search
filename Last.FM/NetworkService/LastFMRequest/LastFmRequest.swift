@@ -11,7 +11,7 @@ import Foundation
 protocol Request {
     
     func endPoint() -> String
-    func  apiKey() -> String
+    func apiKey() -> String
     func buildRequest() -> URLRequest?
     func requestCompleted(data: Data?, response: URLResponse?,error: Error?)
 }

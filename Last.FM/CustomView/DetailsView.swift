@@ -178,12 +178,9 @@ class DetailsView: UIView {
             strongSelf.activityIndicator.hidesWhenStopped = true
             strongSelf.activityIndicator.stopAnimating()
         }
-        
-        
-        
     }
     
-    func failureUpdate(){
+    func failedToFetchata(){
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.removeViewsFromStacks(sv: strongSelf.hListernersStackView)
